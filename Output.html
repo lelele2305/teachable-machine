@@ -8,27 +8,24 @@
     <link rel="stylesheet" type="text/css" href="/style.css" />
 </head>
 <body>
-    <style>
-        .hidden{
-            display: none;
-        }
-    </style>
+
     
-    <h1>What pests does my plant have?</h1>
+    <h1>What pests does <br> my plant have?</h1>
 
     <p>Your plant may have these pests:</p>
 
     <div id="fungus" class="hidden">
         <h2>
-            Fungus
+            Fungus gnat
         </h2>
+        <img class="pests" src="fungus.jpeg">
         <p>
             What you can do about it:
-            <li>
-                <ul>yellow cards</ul>
-                <ul>matches</ul>
-                <ul>nematodes</ul>
-             </li>       
+        
+                <p>Yellow cards</p>
+                <p>Matches</p>
+                <p>Nematodes</p>
+            
          </p>
     </div>
 
@@ -36,13 +33,14 @@
         <h2>
             Thrips
         </h2>
+        <img class="pests" src="thrips.jpg">
         <p>
             What you can do about it:
-            <li>
-                <ul>yellow cards</ul>
-                <ul>matches</ul>
-                <ul>nematodes</ul>
-             </li>       
+      
+                <p>Separate it</p>
+                <p>Rinse thoroughly</p>
+                <p>Neem oil</p>
+              
          </p>
     </div>
 
@@ -50,27 +48,29 @@
         <h2>
             Aphids
         </h2>
+        <img class="pests" src="aphids.jpeg">
         <p>
             What you can do about it:
-            <li>
-                <ul>yellow cards</ul>
-                <ul>matches</ul>
-                <ul>nematodes</ul>
-             </li>        
+       
+                <p>yellow cards</p>
+                <p>matches</p>
+                <p>nematodes</p>
+                  
         </p>
     </div>
 
     <div id="scale" class="hidden">
         <h2>
-            Scale
+            Scale insects
         </h2>
+        <img  class="pests" src="scale.jpeg">
         <p>
              What you can do about it:
-             <li>
-                <ul>yellow cards</ul>
-                <ul>matches</ul>
-                <ul>nematodes</ul>
-             </li>
+      
+                <p>yellow cards</p>
+                <p>matches</p>
+                <p>nematodes</p>
+            
         </p>
     </div>
 
@@ -78,13 +78,14 @@
         <h2>
             Spider mites
         </h2>
+        <img class="pests" src="spider.jpeg">
         <p>
             What you can do about it:
-            <li>
-                <ul>yellow cards</ul>
-                <ul>matches</ul>
-                <ul>nematodes</ul>
-             </li>       
+
+                <p>yellow cards</p>
+                <p>matches</p>
+                <p>nematodes</p>
+     
         </p>
     </div>
 
@@ -92,13 +93,14 @@
         <h2>
             White flies
         </h2>
+        <img class="pests" src="white.jpeg">
         <p>
             What you can do about it:
-            <li>
-                <ul>yellow cards</ul>
-                <ul>matches</ul>
-                <ul>nematodes</ul>
-             </li>        
+
+                <p>yellow cards</p>
+                <p>matches</p>
+                <p>nematodes</p>
+          
         </p>
     </div>
 
@@ -108,13 +110,19 @@
         <div id=""></div>
         <p>
             What you can do: 
-            <li>
+       
                 <ul>yellow cards</ul>
                 <ul>matches</ul>
                 <ul>nematodes</ul>
-            </li>
+     
         </p>
     </div>
+
+    <div class="loading-container">
+        <div class="leaf"></div>
+    </div>    
+
+    <footer><p>Leonie Manthey 2024</p></footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", function(){
@@ -133,13 +141,13 @@
                        // }
                     
 
-                        case "fungus":{
+                        case "Fungus gnat":{
                             document.querySelector("#fungus").classList.remove("hidden");
                             break;
                         }
 
                         case "thrips":{
-                            document.querySelector("thrips").classList.remove("hidden");
+                            document.querySelector("#thrips").classList.remove("hidden");
                             break;
                         }
 
@@ -148,17 +156,17 @@
                             break;
                         }
 
-                        case "scale":{
+                        case "scale insects":{
                             document.querySelector("#scale").classList.remove("hidden");
                             break;
                         }
 
-                        case "spider":{
+                        case "Spider mite":{
                             document.querySelector("#spider").classList.remove("hidden");
                             break;
                         }
 
-                        case "white":{
+                        case "white fly":{
                             document.querySelector("#white").classList.remove("hidden");
                             break;
                         }
